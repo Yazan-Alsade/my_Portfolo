@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    color: #333;
+}
+
+header {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #ecf0f1;
+    /* padding: 20px 0; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+main {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+.hero span{
+    color: #3377a5;
+    font-weight: 600;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #2980b9;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.about-content p{
+    font-size: 17px;
+    
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.services-content, .projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.services-content i{
+    color: #2980b9;
+}
+
+.service-item, .project-item {
+    flex: 1 1 calc(33.333% - 40px);
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover, .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.service-item i, .project-item img {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.project-item a {
+    text-decoration: none;
+    color: #1c4c6b;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.contact-info i {
+    color: #2c3e50;
+}
+.contact-info a {
+    text-decoration: none;
+    color: #0c233a;
+}
+.contact-info i{
+    color: #1c4c6b;
+}
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #2c3e50;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.timeline-date {
+    color: #44595a;
+    font-size: 0.9em;
+    font-weight: 600;
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0; 
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #ecf0f1;
+    width: 100%;
+    bottom: 0;
+}
